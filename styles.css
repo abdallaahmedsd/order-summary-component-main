@@ -1,0 +1,140 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+}
+
+p {
+  line-height: 1.6;
+}
+.wave {
+  width: 100%;
+}
+.wave svg {
+  max-width: 100%;
+  display: block
+}
+
+.container {
+  width: 350px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 20px 0 #bbc2d4;
+}
+
+.img-container {
+  height: 200px;
+}
+
+.img-container svg {
+  max-width: 100%;
+  height: 100%
+}
+
+.details {
+  padding: 30px 25px;
+}
+
+.details h2 , .details > p {
+  text-align: center;
+}
+
+.details h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.details>p {
+  margin: 15px 0 25px;
+}
+
+p , .cancel-btn {
+  color: var(--desaturated-blue)
+}
+
+.details .plan,
+.details .plan .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.details .plan .left {
+  gap: 20px;
+}
+
+.details>p , .price-container p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.price-container span {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.details .change-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bright-blue);
+  transition: .3s;
+}
+
+.details .change-btn:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 80%);
+}
+
+.payment-btn {
+  width: 100%;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  display: block;
+  margin: 30px 0 20px;
+  cursor: pointer;
+  transition: background-color .3s;
+  box-shadow: 0 10px 10px 0 #bbc;
+}
+
+.payment-btn:hover {
+  background-color: hsla(245, 75%, 52%, 80%);
+}
+
+.cancel-btn {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+}
+
